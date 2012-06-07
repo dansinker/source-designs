@@ -4,227 +4,65 @@
 <title>Source | This is the Tagline - A project by Knight-Mozilla OpenNews</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-<style type="text/css">
-body {
-	margin: 0;
-}
-#topbar {
-	position: fixed;
-	background-color: #e4e4e4;
-	height: 50px;
-	width: 100%;
-	margin-bottom: 50px;
-	top: 0px;
-	border-bottom: 1px solid #767676;
-	-moz-box-shadow: 0px 2px 4px #767676;
-	-webkit-box-shadow: 0px 2px 4px #767676;
-	box-shadow: 0px 2px 4px #767676;
-}
+<link href="media/bootstrap.css" rel='stylesheet' type='text/css'>
+<link href="media/app.css" rel='stylesheet' type='text/css'>
+<link href="media/font-awesome.css" rel='stylesheet' type='text/css'>
 
-#topbar #barstuff {
-	width: 800px;
-	height: 50px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#topbar img.opennews {
-	padding-top:2px;
-	float: right;
-}
-
-#topbar img.sourcelogomin {
-	padding-top: 5px;
-	display: none;
-}
-
-
-header {
-	width: 800px;
-	margin-top: 100px;
-	margin-bottom: 50px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-article {
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	font-family: Georgia;
-	font-size: 1.3em;
-	line-height: 1.8em;
-}
-
-h2 {
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-weight: 400;
-	text-align: left;
-	margin-bottom: 20px;
-	color: #2e2e2d;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-h3 {
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-weight: 300;
-	text-align: left;
-	margin-bottom: 10px;
-	color: #2e2e2d;
-    text-transform: uppercase;
-    font-size: 24px;
-
-}
-
-
-h4 {
-	font-family: Georgia;
-	font-weight: normal;
-	font-size: 1.3em;
-	margin-top: 0px;
-	margin-bottom: 45px;
-	line-height: 1.2em;
-	color: rgba(250,121,7,0.94);
-}
-
-aside  {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	float: right;
-	width: 200px;
-	height: 100%;
-	padding-left: 30px;
-	font-size: .8em;
-	margin-top: 0px;
-	padding-top: 0px;
-	line-height: 1.1em;
-}
-
-aside #library{
-	margin-top: 50px;
-}
-
-aside #library ul {
-list-style-type: square;
-padding: 0;
-margin-left: 20px;
-}
-
-aside #library li {
-	margin-bottom: 10px;
-}
-
-ul#nav {
-	margin-top: 12px;
-
-margin-right: -12px;
-float: right;
-font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-	text-transform: uppercase;
-	width: 300px;
-	text-shadow: 0px 1px 0px #f3f3f4;
-}
-
-#nav li {
-	margin-top: 15px;
-	display: inline;
-}
-
-#nav li a {
-	border-right: 1px solid #e4e4e4;
-	border-left: 1px solid #e4e4e4;
-	padding-top: 12px;
-	padding-bottom: 15px;
-	color: #333333;
-	text-decoration: none;
-	padding-right: 10px;
-	padding-left: 10px;
-
-}
-
-#nav li a:hover {
-	border-right: 1px solid #eeeeee;
-	border-left: 1px solid #eeeeee;
-	background-color: #c2c2c2;
-}
-
-img.opennews {
-}
-
-.fixed {
-	position: fixed;
-	top: 50px;
-	left: 600px;
-}
-
-.gist {
-	font-size: .7em;
-	line-height: 1.1em;
-}
-
-p.date {
-	margin-top: 10px;
-}
-
-p.byline {
-	font-weight: 400;
-}
-p.organization {
-	font-weight: 400;
-	margin-top: -10px;
-}
-
-footer {
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 100px;
-}
-</style>
 </head>
 <body>
-<div id="topbar">
-<div id="barstuff">
+<header id="topbar">
+<div class="container">
 <a href="http://www.mozillaopennews.org"><img src="media/opennewsmini.png" class="opennews"></a>
 <img src="media/sourcemin.png" class="sourcelogomin">
-<ul id="nav">
+<ul id="navigation">
 <li><a href="http://www.nytimes.com">Projects</a>
 <li><a href="http://www.nytimes.com">Community</a>
 <li><a href="http://www.nytimes.com">Code</a>
 </ul>
 </div>
-</div>
-<header>
-<img src="media/source_logo.png" class="biglogo">
 </header>
+
+<div class="content">
+            <div class="container page-block">
+<img src="media/source_logo.png" class="main-logo">
+
+            </div>
+        
+            <div class="container">
 <article>
-<h2>Untangling a Web of FEC Data</h2>
+<h2>This article has some article blocks</h2>
 <h4>The ProPublica News Apps Team explains how they built a 'Tangled Web' of election contribution data</h4>
 <aside>
-<p class="date">March 23, 2012</p>
-<p class="byline">by Al Shaw</p>
-<p class="organization">ProPublica</p>
-<div id="library">
-Code in this piece
-<ul>
-<li>tootsie roll bear
-<li>Carrot cake bonbon donut
-<li>gingerbread dessert caramels
-</ul>
-</div>
-
-</aside>
- <p>If you have previously worked with Django templates, you should 
+	<div class="byline">
+     	<h6 class="date">June 2, 2012</h6>
+        <h6 class="byline-name">By <a href="http://43e5.localtunnel.com/people/erin-kissane/">Erin Kissane</a>
+        </h6>        
+    </div>
+            
+    <h5 class="list-header">Code</h5>    
+    <ul class="link-list">        
+    <li><i class="icon-list-alt"></i><a href="http://43e5.localtunnel.com/code/simple-tiles-streets/">Simple Tiles Streets</a></li>
+    </ul>
+    <h5 class="list-header">People</h5>    
+    <ul class="link-list">        
+    <li><i class="icon-user"></i><a href="http://43e5.localtunnel.com/people/jeff-larson/">Jeff Larson</a></li>
+    </ul>
+    <h5 class="list-header">Organizations</h5>
+    <ul class="link-list">
+    <li><i class="icon-cogs"></i><a href="http://43e5.localtunnel.com/organizations/propublica/">ProPublica</a></li>
+    </ul>    
+    </aside>
+    
+<p>If you have previously worked with Django templates, you should 
 find Jinja2 very familiar. In fact, most of the syntax elements look and
  work the same.<br><br>However, Jinja2 provides some more syntax elements covered in the documentation and some work a bit different.<br><br>This section covers the template changes. As the API is fundamentally different we won’t cover it here.</p>
     
         <div class="page-block">
         <h3 id="method-calls">Method calls</h3>
         <p>In Django method calls work implicitly. With Jinja2 you have to specify that you want to call an object. Thus this Django code:
-	        <code>{% for page in user.get_created_pages %}<br>    ...<br>{% endfor %}</code><br><br>will look like this in Jinja:<br><br><c>{% for page in user.get_created_pages() %}<br>    ...<br>{% endfor %}</blockquote><br><br>This allows you to pass variables to the function which is also used for macros which is not possible in Django.<p></p>
+        <p>
+	        <code>{% for page in user.get_created_pages %}<br>    ...<br>{% endfor %}</code><br><br>will look like this in Jinja:
+	        <p><code>{% for page in user.get_created_pages() %}<br>    ...<br>{% endfor %}</blockquote><br><br>This allows you to pass variables to the function which is also used for macros which is not possible in Django.<p></p>
     </div>
         <div class="page-block">
         <h3 id="conditions">Conditions</h3>
@@ -240,7 +78,7 @@ this in Django:<br><br></p><blockquote>{{ items|join:", " }}</blockquote><br><br
     </div>
 
 </article>
-
+</div>
 <footer>
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />
 <p>Source is a project of Knight-Mozilla OpenNews.
