@@ -5,7 +5,9 @@ These are some basic design sketches for templating the Source project for OpenN
 
 All the CSS points to app.css and is shared across flat files.
 
-I'm hosting mirrors of these on S3 for easy peeping.
+I'm hosting mirrors of these on S3 for easy peeping. 
+
+NOTE THAT INTERLINKING BETWEEN THESE EXAMPLES SUCKS ASS. Use your back button to not go crazy.
 
 Generic List View: http://opennews-source.s3-website-us-east-1.amazonaws.com/generic_list_view.html
 * note that this is viewing a top-level topic "projects" if we're in the home view, that wouldn't display
