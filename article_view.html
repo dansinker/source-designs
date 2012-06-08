@@ -3,11 +3,13 @@
 <head>
 <title>Source | This is the Tagline - A project by Knight-Mozilla OpenNews</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="media/jquery.syntaxhighlighter.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <link href="media/bootstrap.css" rel='stylesheet' type='text/css'>
 <link href="media/app.css" rel='stylesheet' type='text/css'>
 <link href="media/font-awesome.css" rel='stylesheet' type='text/css'>
-
+<!-- Initialise jQuery Syntax Highlighter -->
+<script type="text/javascript">$.SyntaxHighlighter.init();</script>
 </head>
 <body>
 <header id="topbar">
@@ -55,31 +57,33 @@
     
 <p>If you have previously worked with Django templates, you should 
 find Jinja2 very familiar. In fact, most of the syntax elements look and
- work the same.<br><br>However, Jinja2 provides some more syntax elements covered in the documentation and some work a bit different.<br><br>This section covers the template changes. As the API is fundamentally different we won’t cover it here.</p>
+ work the same.<p>However, Jinja2 provides some more syntax elements covered in the documentation and some work a bit different.<p>This section covers the template changes. As the API is fundamentally different we won’t cover it here.</p>
     
         <div class="page-block">
         <h3 id="method-calls">Method calls</h3>
         <p>In Django method calls work implicitly. With Jinja2 you have to specify that you want to call an object. Thus this Django code:
         <p>
-	        <code>{% for page in user.get_created_pages %}<br>    ...<br>{% endfor %}</code><br><br>will look like this in Jinja:
-	        <p><code>{% for page in user.get_created_pages() %}<br>    ...<br>{% endfor %}</blockquote><br><br>This allows you to pass variables to the function which is also used for macros which is not possible in Django.<p></p>
+	        <pre class="highlight">{% for page in user.get_created_pages %}<br>    ...<br>{% endfor %}</pre><p>will look like this in Jinja:
+	        <p><pre class="highlight">{% for page in user.get_created_pages() %}<br>    ...<br>{% endfor %}</pre><p>This allows you to pass variables to the function which is also used for macros which is not possible in Django.<p></p>
     </div>
         <div class="page-block">
         <h3 id="conditions">Conditions</h3>
-        <p>In Django you can use the following constructs to check for equality:<br><br></p>
-        <blockquote>{% ifequal foo "bar" %}<br>    ...<br>{% else %}<br>    ...<br>{% endifequal %}</blockquote>
-        <p>In Jinja2 you can use the normal if statement in combination with operators:<br><br><blockquote>{% if foo == 'bar' %}<br>    ...<br>{% else %}<br>    ...<br>{% endif %}</blockquote><br><br>You can also have multiple elif branches in your template:<br><br><blockquote>{% if something %}<br>    ...<br>{% elif otherthing %}<br>    ...<br>{% elif foothing %}<br>    ...<br>{% else %}<br>    ...<br>{% endif %}</blockquote><p></p>
+        <p>In Django you can use the following constructs to check for equality:<p></p>
+        <pre class="highlight">{% ifequal foo "bar" %}<br>    ...<br>{% else %}<br>    ...<br>{% endifequal %}</pre>
+        <p>In Jinja2 you can use the normal if statement in combination with operators:<p>
+        <pre class="highlight">{% if foo == 'bar' %}<br>    ...<br>{% else %}<br>    ...<br>{% endif %}</pre>
+        <p>You can also have multiple elif branches in your template:<p><pre class="highlight">{% if something %}<br>    ...<br>{% elif otherthing %}<br>    ...<br>{% elif foothing %}<br>    ...<br>{% else %}<br>    ...<br>{% endif %}</pre><p></p>
     </div>
         <div class="page-block">
         <h3 id="filter-arguments">Filter arguments</h3>
         <p>Jinja2 provides more than one argument for filters. Also the 
 syntax for argument passing is different. A template that looks like 
-this in Django:<br><br></p><blockquote>{{ items|join:", " }}</blockquote><br><br>looks like this in Jinja2:<br><br><blockquote>{{ items|join(', ') }}</blockquote><br><br>In fact it’s a bit more verbose but it allows different types of arguments - including variables - and more than one of them.<p></p>
+this in Django:<p></p><pre class="highlight">{{ items|join:", " }}</pre><p>looks like this in Jinja2:<p><pre class="highlight">{{ items|join(', ') }}</pre><p>In fact it’s a bit more verbose but it allows different types of arguments - including variables - and more than one of them.<p></p>
     </div>
 
 </article>
 </div>
-<footer>
+<footer class="container">
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />
 <p>Source is a project of Knight-Mozilla OpenNews.
 </footer>
