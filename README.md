@@ -39,3 +39,5 @@ People Detail View: http://opennews-source.s3-website-us-east-1.amazonaws.com/pe
 
 Article Blank: http://opennews-source.s3-website-us-east-1.amazonaws.com/article_blank.html
 * This is exactly what it says on the box
+
+One final note: the footer, obviously, sucks on all of these. Didn't even start thinking about that yet.
