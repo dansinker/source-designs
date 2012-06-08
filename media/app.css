@@ -182,6 +182,10 @@ h3 {
 	color: rgba(250,121,7,0.94);
 }
 
+h3 a {
+	color: #2e2e2d;
+}
+
 article h3 {margin-top: 1em;}
 
 h4 {
@@ -288,13 +292,17 @@ aside ul.link-list {
 }
 
 
-ul.link-list a {
+.link-list a {
 	font-weight: 400;
 }
 
 
-h1 a, h2 a, ul.link-list a {
+h1 a, h2 a, .link-list a {
 	color: black;
+}
+
+h1.name {
+	font-weight: 400;
 }
 
 
@@ -303,11 +311,14 @@ h1 a, h2 a, ul.link-list a {
 	margin-left: -10px;	
 }
 
+span.category, span.category a {
+	color: rgb(252, 110, 31);
+}
+
 h2 span.category {
 	font-size: .6em;
 	font-weight: 300;
 	padding-bottom: 0px;
-	color: rgb(252, 110, 31);
 	display: block;
 }
 

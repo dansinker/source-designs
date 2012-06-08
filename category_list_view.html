@@ -4,244 +4,10 @@
 <title>Source | This is the Tagline - A project by Knight-Mozilla OpenNews</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href="media/bootstrap.css" rel='stylesheet' type='text/css'>
 <link href="media/app.css" rel='stylesheet' type='text/css'>
 <link href="media/font-awesome.css" rel='stylesheet' type='text/css'>
 
-<style type="text/css">
-body {
-	margin: 0;
-}
-#topbar {
-	position: fixed;
-	background-color: #e4e4e4;
-	height: 50px;
-	width: 100%;
-	margin-bottom: 50px;
-	top: 0px;
-	border-bottom: 1px solid #767676;
-	-moz-box-shadow: 0px 2px 4px #767676;
-	-webkit-box-shadow: 0px 2px 4px #767676;
-	box-shadow: 0px 2px 4px #767676;
-}
-
-#topbar #barstuff {
-	width: 800px;
-	height: 50px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#topbar img.opennews {
-	padding-top:2px;
-	float: right;
-}
-
-#topbar img.sourcelogomin {
-	padding-top: 5px;
-	display: none;
-}
-
-
-.biglogo {
-	margin-top: 100px;
-	margin-bottom: 50px;
-}
-
-article, .container {
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	font-family: Georgia;
-	font-size: 1.3em;
-	line-height: 1.8em;
-}
-
-h2 {
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-weight: 400;
-	text-align: left;
-	margin-bottom: 20px;
-	color: #2e2e2d;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-h3 {
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-weight: 300;
-	text-align: left;
-	margin-bottom: 10px;
-	color: #2e2e2d;
-    text-transform: uppercase;
-    font-size: 24px;
-
-}
-
-
-h4 {
-	font-family: Georgia;
-	font-weight: normal;
-	font-size: 1.3em;
-	margin-top: 0px;
-	margin-bottom: 45px;
-	line-height: 1.2em;
-	color: rgba(250,121,7,0.94);
-}
-
-aside  {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	float: right;
-	width: 200px;
-	height: 100%;
-	padding-left: 30px;
-	font-size: .8em;
-	margin-top: 0px;
-	padding-top: 0px;
-	line-height: 1.1em;
-}
-
-aside #library{
-	margin-top: 50px;
-}
-
-aside #library ul {
-list-style-type: square;
-padding: 0;
-margin-left: 20px;
-}
-
-aside #library li {
-	margin-bottom: 10px;
-}
-
-ul#navigation {
-margin-right: -12px;
-float: right;
-font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-	text-transform: uppercase;
-	width: 300px;
-	text-shadow: 0px 1px 0px #f3f3f4;
-}
-
-#navigation li {
-	margin-top: 15px;
-	display: inline;
-}
-
-#navigation li a {
-	border-right: 1px solid #e4e4e4;
-	border-left: 1px solid #e4e4e4;
-	padding-top: 12px;
-	padding-bottom: 15px;
-	color: #333333;
-	text-decoration: none;
-	padding-right: 10px;
-	padding-left: 10px;
-
-}
-
-#navigation li a:hover {
-	border-right: 1px solid #eeeeee;
-	border-left: 1px solid #eeeeee;
-	background-color: #c2c2c2;
-}
-
-img.opennews {
-}
-
-.fixed {
-	position: fixed;
-	top: 50px;
-	left: 600px;
-}
-
-.gist {
-	font-size: .7em;
-	line-height: 1.1em;
-}
-
-p.date {
-	margin-top: 10px;
-}
-
-p.byline {
-	font-weight: 400;
-}
-p.organization {
-	font-weight: 400;
-	margin-top: -10px;
-}
-
-footer {
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 100px;
-}
-
-h1, h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	text-transform: uppercase;
-	font-size: 1.4em;
-}
-
-h2 {
-	font-weight: 400;
-	font-size: 1.1em;
-	margin-bottom: 10px;
-}
-
-ul.link-list {
-	font-size: .7em;
-	font-weight: 300;
-	margin-bottom: -10px;
-}
-
-ul.link-list a {
-	font-weight: 400;
-}
-
-h1 a, h2 a, ul.link-list a {
-	color: black;
-}
-
-h2 {
-	line-height: 1.3em;
-	margin-bottom: 15px;
-}
-
-.link-list li:nth-child(2n):before {
-	content: "| ";
-	margin-left: -10px;	
-}
-
-h2 span.category {
-	font-size: .6em;
-	font-weight: 300;
-	padding-bottom: 0px;
-	color: rgb(252, 110, 31);
-	display: block;
-}
-
-a {
-	color: rgb(173, 49, 33);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h1.maintopic {
-	text-align: right;
-	margin-right: 218px;
-	margin-top: -20px;
-}
-</style>
 </head>
 <body>
 <header id="topbar">
@@ -264,24 +30,25 @@ h1.maintopic {
         
             <div class="container">
                 <article><div class="page-block">
-    <h1 class="maintopic">Projects</h1>
+    <h1 class="maintopic"><a href="generic_list_view.html">Projects</a> / <span class="category">How-To</span></h1>
 </div>
 
     <div class="page-block">
-        <h2><span class="category">How-To</span> <a href="http://43e5.localtunnel.com/articles/article-has-some-article-blocks/">This article has some article blocks</a></h2>
+        <h2><span class="category">How-To</span> <a href="article_view.html">This article has some article blocks</a></h2>
         <ul class="link-list link-list-inline">
             <li>By <a href="http://43e5.localtunnel.com/people/erin-kissane/">Erin Kissane</a></li>            
-                                                        </ul>
+            <li><i class="icon-user"></i><a href="people_detail_view.html">Jeff Larson</a></li>                        
+            <li><i class="icon-cogs"></i><a href="http://43e5.localtunnel.com/organizations/propublica/">ProPublica</a></li>        
+            </ul>
         <p>If you have previously worked with Django templates, you 
 should find Jinja2 very familiar. In fact, most of the syntax elements 
 look and work the same.</p>
     </div>
     <div class="page-block">
-        <h2><span class="category">Project</span> <a href="http://43e5.localtunnel.com/articles/introduction-simple-tiles-streets/">An introduction to Simple Tiles Streets</a></h2>
+        <h2><span class="category">How-To</span> <a href="article_nocode.html">An introduction to Simple Tiles Streets</a></h2>
         <ul class="link-list link-list-inline">
-            <li>By <a href="http://43e5.localtunnel.com/people/erin-kissane/">Erin Kissane</a></li>            
-            <li><i class="icon-user"></i><a href="http://43e5.localtunnel.com/people/jeff-larson/">Jeff Larson</a></li>                        
-            <li><i class="icon-cogs"></i><a href="http://43e5.localtunnel.com/organizations/propublica/">ProPublica</a></li>        </ul>
+            <li>By <a href="http://43e5.localtunnel.com/people/erin-kissane/">Erin Kissane</a></li>                 
+            </ul>
         <p>Phasellus augue sapien, mattis ac egestas sed, pharetra at 
 tellus. Aliquam varius risus a lectus ultricies eget venenatis nisi 
 tempor. Vestibulum sem libero, accumsan eget sagittis et, faucibus in 
@@ -294,7 +61,7 @@ lacus eu metus tincidunt consectetur. In hac habitasse platea dictumst.
 Praesent feugiat porttitor magna, in fermentum risus gravida ac. Nullam a
  massa orci, at rutrum est. </p>
     </div>
-</article>
+</div>
             </div>
         </div>
 <footer class="container">            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="media/88x31.png"></a><br>
