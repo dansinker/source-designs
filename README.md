@@ -34,6 +34,7 @@ People List View: http://opennews-source.s3-website-us-east-1.amazonaws.com/peop
 
 People Detail View: http://opennews-source.s3-website-us-east-1.amazonaws.com/people_detail_view.html
 * This one's pretty solid
+* Though note that the example page I was working from didn't actually have a code list, so go with what you had formatted previously for that.
 * But do we want a little bio under the name? Maybe. If we do, would maybe be good on the list view too.
 
 Article Blank: http://opennews-source.s3-website-us-east-1.amazonaws.com/article_blank.html
