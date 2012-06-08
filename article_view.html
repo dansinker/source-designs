@@ -3,13 +3,15 @@
 <head>
 <title>Source | This is the Tagline - A project by Knight-Mozilla OpenNews</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-<script src="media/jquery.syntaxhighlighter.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <link href="media/bootstrap.css" rel='stylesheet' type='text/css'>
 <link href="media/app.css" rel='stylesheet' type='text/css'>
 <link href="media/font-awesome.css" rel='stylesheet' type='text/css'>
 <!-- Initialise jQuery Syntax Highlighter -->
-<script type="text/javascript">$.SyntaxHighlighter.init();</script>
+<script src="media/jquery.syntaxhighlighter.min.js"></script>
+<script type="text/javascript">
+    $.SyntaxHighlighter.init();
+</script>
 </head>
 <body>
 <header id="topbar">
@@ -47,7 +49,7 @@
     </ul>
     <h5 class="list-header">People</h5>    
     <ul class="link-list">        
-    <li><i class="icon-user"></i><a href="http://43e5.localtunnel.com/people/jeff-larson/">Jeff Larson</a></li>
+    <li><i class="icon-user"></i><a href="people_detail_view.html">Jeff Larson</a></li>
     </ul>
     <h5 class="list-header">Organizations</h5>
     <ul class="link-list">
@@ -89,7 +91,7 @@ this in Django:<p></p><pre class="highlight">{{ items|join:", " }}</pre><p>looks
 </footer>
 <script type="text/javascript">
 $(document).ready(function () { 
-  var top = $('.biglogo').offset().top - parseFloat($('.biglogo').css('margin-top').replace(/auto/, 0));
+  var top = $('.main-logo').offset().top - parseFloat($('.main-logo').css('margin-top').replace(/auto/, 0));
   $(window).scroll(function (event) {
     // what the y position of the scroll is
     var y = $(this).scrollTop();
