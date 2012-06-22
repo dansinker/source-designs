@@ -315,6 +315,24 @@ span.category, span.category a {
 	color: rgb(252, 110, 31);
 }
 
+span.tags {
+	color:#ebebeb;
+}
+
+span.tags:before {
+	content: " / "
+}
+
+span.tags a {
+	color:#ebebeb;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+span.tags a:hover {
+	color: #999999;
+}
+
 h2 span.category {
 	font-size: .6em;
 	font-weight: 300;
